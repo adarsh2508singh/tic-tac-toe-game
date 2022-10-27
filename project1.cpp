@@ -13,7 +13,7 @@ bool draw = false;
 
 void display_board(){
 
-    //Rander Game Board LAYOUT
+
 
     cout<<"PLAYER - 1 [X]\t PLAYER - 2 [O]\n\n";
     cout<<"\t\t     |     |     \n";
@@ -78,12 +78,12 @@ void player_turn(){
 //Function to get the game status e.g. GAME WON, GAME DRAW GAME IN CONTINUE MODE
 
 bool gameover(){
-    //checking the win for Simple Rows and Simple Column
+
     for(int i=0; i<3; i++)
     if(board[i][0] == board[i][1] && board[i][0] == board[i][2] || board[0][i] == board[1][i] && board[0][i] == board[2][i])
     return true;
 
-    //checking the win for both diagonal
+
 
     if(board[0][0] == board[1][1] && board[0][0] == board[2][2] || board[0][2] == board[1][1] && board[0][2] == board[2][0])
     return true;
